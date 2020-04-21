@@ -1,9 +1,4 @@
 ﻿
-/*@media only (max-width : 480px) {
-    #title {
-        font-size: 56px;
-    }
-}*/
 
 * {
     box-sizing: border-box;
@@ -70,13 +65,6 @@ i, .showcase {
 .google-icon {
     margin: 0px;
     padding: 0;
-}
-
-.btn-text {
-    margin: 0px;
-    color: #fff;
-    font-size: 14px;
-    font-family: "Roboto";
 }
 
 .google-btn:hover {

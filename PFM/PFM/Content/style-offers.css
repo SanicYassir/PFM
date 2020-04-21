@@ -40,13 +40,13 @@ label.required {
 input, select {
     box-sizing: border-box;
     border: 1px solid #999;
-    padding: 10px 4px;
+    padding: 8px 6px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
-    font-size: 14px;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -157,8 +157,8 @@ input.error {
 }
 
 .sec-showcase-offers {
-    background-color: aliceblue;
-    height: 640px;
+    background-color: antiquewhite;
+    height: 680px;
 }
 
 .showcase-offers {
@@ -194,4 +194,21 @@ input.error {
     width: 100%;
     display: flex;
     align-items: center;
+}
+.icon-con
+{
+    background-image: url(../pic/eye-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    color: lightgray;
+    cursor:pointer;
+}
+.icon-pass {
+    background-image: url(../pic/eye-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    color: lightgray;
+    cursor: pointer;
 }
