@@ -171,13 +171,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EatDrinkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\MailViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -193,9 +196,65 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\BtnSignUp.css" />
+    <Content Include="Content\gallery.css" />
+    <Content Include="Content\mobile.css" />
+    <Content Include="Content\style-offers.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\style_eat_offers.css" />
+    <Content Include="Content\style_eat_page.css" />
+    <Content Include="Content\style_room_page.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="pic\best-deals.jpg" />
+    <Content Include="pic\btn_google_light_normal_ios.svg" />
+    <Content Include="pic\canvas.jpg" />
+    <Content Include="pic\eat.jpg" />
+    <Content Include="pic\eat_pic\food-1.jpg" />
+    <Content Include="pic\eat_pic\food-2.jpg" />
+    <Content Include="pic\eat_pic\food-3.jpg" />
+    <Content Include="pic\eat_pic\food-4.jpg" />
+    <Content Include="pic\eat_pic\showcase-eat.jpg" />
+    <Content Include="pic\eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg" />
+    <Content Include="pic\hotelthumb\hotel\l1150187.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-1.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-10.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-11.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-12.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-13.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-14.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-15.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-16.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-2.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-21.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-23.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-24.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-25.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-5.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-6.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-7.jpg" />
+    <Content Include="pic\hotelthumb\hotel\photo-gallery-9.jpg" />
+    <Content Include="pic\hotelthumb\hotel\uogashi1.jpg" />
+    <Content Include="pic\hotelthumb\hotel\uogashi2.jpg" />
+    <Content Include="pic\menupic\diner.jpg" />
+    <Content Include="pic\menupic\lunch.jpg" />
+    <Content Include="pic\offer-pic\showcase-offer.jpg" />
+    <Content Include="pic\offer.jpg" />
+    <Content Include="pic\rooms.jpg" />
+    <Content Include="pic\rooms_pic\room-1.jpg" />
+    <Content Include="pic\rooms_pic\room-2.jpg" />
+    <Content Include="pic\rooms_pic\room-3.jpg" />
+    <Content Include="pic\rooms_pic\room-4.jpg" />
+    <Content Include="pic\rooms_pic\room-5.jpg" />
+    <Content Include="pic\rooms_pic\room-6.jpg" />
+    <Content Include="pic\rooms_pic\showcase_room.jpg" />
+    <Content Include="pic\serv.jpg" />
+    <Content Include="pic\showcase.jpg" />
+    <Content Include="pic\showcase2.jpg" />
+    <Content Include="pic\showcase3.jpg" />
+    <Content Include="pic\showcase_about.jpg" />
+    <Content Include="pic\showcase_gallery.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -232,6 +291,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\MyScripts\DropDowlist_countries.js" />
+    <Content Include="Scripts\MyScripts\main.js" />
+    <Content Include="Scripts\MyScripts\RegisterFormValidation.js" />
+    <Content Include="Scripts\MyScripts\VallidationContactUs.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -346,6 +409,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Shared\_OngletContact.cshtml" />
+    <Content Include="Views\EatDrink\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
@@ -356,6 +421,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
