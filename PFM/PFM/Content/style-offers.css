@@ -1,9 +1,7 @@
 
 
 
-#formRegister {
-    margin-top: -2px;
-}
+
 
 .signup-img-content {
     position: absolute;
@@ -23,23 +21,23 @@
 
 
 .labelinput {
-    display:block;
+    display: block;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 7px;
 }
 
-    label.required {
-        position: relative;
+label.required {
+    position: relative;
+}
+
+    label.required:after {
+        content: '*';
+        margin-left: 2px;
+        color: #b90000;
     }
 
-        label.required:after {
-            content: '*';
-            margin-left: 2px;
-            color: #b90000;
-        }
-
-input,select {
+input, select {
     box-sizing: border-box;
     border: 1px solid #999;
     padding: 10px 4px;
@@ -82,6 +80,7 @@ input,select {
         left: 0;
         bottom: 12px;
     }
+
 .submit {
     height: 50px;
     display: inline-block;
@@ -117,8 +116,9 @@ input,select {
     margin-right: 25px;
 }
 
-#submit:hover {
-        background-color: #267747;}
+    #submit:hover {
+        background-color: #267747;
+    }
 
 .div-form {
     position: relative;
@@ -131,7 +131,7 @@ label.error {
     right: 0;
 }
 
-label.error:after {
+    label.error:after {
         font-family: 'Material-Design-Iconic-Font';
         position: absolute;
         content: '\f1f8';
@@ -139,7 +139,7 @@ label.error:after {
         top: 37px;
         font-size: 23px;
         color: #c70000;
-}
+    }
 
 input.error {
     border: 1px solid #c70000;
@@ -156,9 +156,9 @@ input.error {
     z-index: 99;
 }
 
-.sec-showcase-offers 
-{
-    height:640px;
+.sec-showcase-offers {
+    background-color: aliceblue;
+    height: 640px;
 }
 
 .showcase-offers {
@@ -174,3 +174,24 @@ input.error {
         background-color: #DF6C4F;
         font-family: 'Long Cang', cursive;
     }
+
+#sp2 {
+    display: block;
+    font-size: 3rem;
+    font-family: 'Long Cang', cursive;
+}
+
+#sp1, #sp3 {
+    background-color: #9cd9ee;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin:2px;
+}
+
+
+#div-or {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

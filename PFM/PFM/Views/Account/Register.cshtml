@@ -15,8 +15,8 @@
             </div>
         </div>
     </div>
-    <div class="signup-form col-md-8">
-        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-md-12 pt-5 rounded", role = "form", @id = "formRegister" }))
+    <div class="signup-form col-md-8 m-0 pt-2"   >
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-md-12 pt-5 ", role = "form", @id = "formRegister" }))
         {
         <div class="col-md-6">
             <div class="div-form col-md-12">
@@ -64,9 +64,12 @@
                 </div>
                 <div class="div-form col-md-12">
                     <label></label>
-                    <button class="btn font-weight-bold col-md-12 " style="background-color:#DF6C4F;height:43px;color:#9cd9ee" type="submit" >Register</button>
+                    <button class="btn font-weight-bold col-md- d-flex justify-content-center align-items-center w-100" style="background-color:#DF6C4F;height:43px;color:white;font-size:1.3rem;" type="submit" ><span>Register</span></button>
                 </div>
-                <div class="div-or"><span>or</span></div>
+                <div id="div-or"><span id="sp1"></span> <span id="sp2">OR</span><span id="sp3"> </span></div>
+                <div class="div-form col-md-12">
+                    @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                </div>
             </div>
         }
     </div>
