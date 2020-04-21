@@ -1,41 +1,217 @@
-﻿@model PFM.Models.RegisterViewModel
+﻿
+@model PFM.Models.RegisterViewModel
 @{
-    ViewBag.Title = "S’inscrire";
+    ViewBag.Title = "Register";
 }
 
-<h2>@ViewBag.Title.</h2>
+<link href="~/Content/style-offers.css" rel="stylesheet" />
+<section class="d-flex col-md-12 m-0 p-0">
+    <div class="sec-showcase-offers col-md-4 p-0 m-0">
+        <div class="showcase-offers d-flex col-md-12 justify-content-center  align-items-center text-center">
+            <div class=" text-light">
+                <h1 class="display-4 text-light px-2">Stay Connected</h1>
+                <br>
+                <span class="text-light">
+                    <i class="fa fa-home" aria-hidden="true"></i><a class="text-light"
+                                                                    href="index.html">Home</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="signup-form col-md-8 px-3 py-3 m-0">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form", @id = "formRegister" }))
+        {
+        <div class="col-md-6">
+            <div class=" row justify-content-between col-md-12 m-0 p-0">
+                <div class="div-form col-md-6 ">
+                    @Html.LabelFor(m => m.firstName, new { @class = "required" })
+                    @Html.TextBoxFor(m => m.firstName)
+                    @*<label for="first_name " class="required ">First name</label>
+                <input type="text" name="first_name " id="first_name " />*@
+                </div>
+                <div class="div-form col-md-6 ">
+                    @*<label for="last_name " class="required ">Last name</label>
+                <input type="text" name="last_name " id="last_name " />*@
+                    @Html.LabelFor(m => m.lastName, new { @class = "required" })
+                    <div>
+                        @Html.TextBoxFor(m => m.lastName)
+                    </div>
+                </div>
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.UserName, new { @class = "required" })
+                @Html.TextBoxFor(m => m.UserName)
+                @*<label for="username " class="required">Username</label>
+            <input type="text" id="user_txt " />*@
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.Email, new { @class = "required" })
+                <div>
+                    @Html.TextBoxFor(m => m.Email)
+                </div>
+                @*<label for="email " class="required ">Email</label>
+            <input type="text" name="email " id="email " />*@
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.PhoneNumber, new { @class = "required" })
+                <div>
+                    @Html.TextBoxFor(m => m.PhoneNumber)
+                </div>
+                @*<label for="phone_number " class="required ">Phone number</label>
+            <input type="text" name="phone_number " id="phone_number " />*@
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.Password, new { @class = "required" })
+                <div>
+                    @Html.PasswordFor(m => m.Password)
+                </div>
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "required" })
+                <div>
+                    @Html.PasswordFor(m => m.ConfirmPassword)
+                </div>
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.PhoneNumber, new { @class = "required" })
+                <div>
+                    @Html.TextBoxFor(m => m.PhoneNumber)
+                </div>
+            </div>
+            <div class="div-form col-md-12">
+                @Html.LabelFor(m => m.Address, new { @class = "required" })
+                <div>
+                    @Html.TextBoxFor(m => m.Address)
+                </div>
+            </div>
+            <div class="row col-md-12 m-0 p-0 justify-content-between">
+                <div class="col-md-4 mb-3 d-flex flex-column m-0 p-1 form-group">
+                    <label for="country">Country</label>
+                    <div class="col-md-12 p-0">
+                        <select name="Country" id="Country" class="form-control col-md-12">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 d-flex flex-column m-0 p-1 form-group">
+                    <label for="">State</label>
+                    <div class="col-md-12 p-0">
+                        <select name="State" id="State" class="form-control col-md-12">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 d-flex flex-column m-0 p-1 form-group">
+                    <label for="">City</label>
+                    <div class="col-md-12 p-0">
+                        <select name="City" id="City" class="form-control col-md-12">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</section>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#formRegister').validate(
+            {
+                errorClass: 'help-block animation-slideDown text-danger',
+                errorElement: 'span',
+                errorPlacement: function (error, e) {
+                    e.parents('.form-group > div').append(error);
+                },
+                highlight: function (e) {
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-{
-    @Html.AntiForgeryToken()
-    <h4>Créer un nouveau compte.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="S’inscrire" />
-        </div>
-    </div>
-}
+                    $(e).closest('.form-group').removeClass('has-success has-error').addClass('has-error');
+                    $(e).closest('.help-block').remove();
+                },
+                success: function (e) {
+                    e.closest('.form-group').removeClass('has-success has-error');
+                    e.closest('.help-block').remove();
+                },
+                rules: {
+                    'firstName': {
+                        required: true
+                    },
+                    'lastName': {
+                        required: true
+                    },
+                    'UserName': {
+                        required: true
+                    },
+                    'Email': {
+                        required: true,
+                        email: true
+                    },
+                    'Password': {
+                        required: true,
+                        minlength: 6
+                    },
+                    'ConfirmPassword': {
+                        required: true,
+                        equalTo: "#Password"
+                    },
+                    'PhoneNumber': {
+                        required: true,
+                        matches: "[0-9]+"
+                    },
+                    'Address': {
+                        required: true
+                    },
+                    'Country': {
+                        required: true
+                    },
+                    'State': {
+                        required: true
+                    },
+                    'City': {
+                        required: true
+                    },
+                },
+                messages: {
+                    'firstName': {
+                        required: "first Name is required"
+                    },
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+                    'lastName': {
+                        required: " last Name is required"
+                    },
+                    'UserName': {
+                        required: "UserName is required"
+                    },
+                    'Email': {
+                        required: "Email is required",
+                        email: true
+                    },
+                    'Password': {
+                        required: "Password is required",
+                        minlength: "min lenght is 6 caractere"
+                    },
+                    'ConfirmPassword': {
+                        required: "Confirm Password is required",
+                        equalTo: "Password and Confirmation Password not much"
+                    },
+                    'PhoneNumber': {
+                        required: "Phone Number is required",
+                        matches: "[0-9]+"
+                    },
+                    'Address': {
+                        required: "Address is required"
+                    },
+                    'Country': {
+                        required: "Country is required"
+                    },
+                    'State': {
+                        required: "State is required"
+                    },
+                    'City': {
+                        required: "City is required"
+                    }
+                }
+            });
+    });
+</script>
+<script src="~/Scripts/MyScripts/DropDowlist_countries.js"></script>
+

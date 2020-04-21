@@ -10,7 +10,7 @@ namespace PFM.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("DBCn", throwIfV1Schema: false)
         {
         }
         public virtual DbSet<MailViewModel> Mails { get; set; }
