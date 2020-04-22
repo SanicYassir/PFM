@@ -3,13 +3,13 @@
     ViewBag.Title = "Register";
 }
 <link href="~/Content/style-offers.css" rel="stylesheet" />
-<section class="row d-flex col-md-12 m-0 p-0">
-    <div class="sec-showcase-offers col-md-4 p-0 m-0">
-        <div class="showcase-offers d-flex col-md-12 justify-content-center  align-items-center text-center">
+<section class="sec-main row d-flex col-lg-12 m-0 p-0">
+    <div class="sec-showcase-offers col-lg-4 p-0 m-0">
+        <div class="showcase-offers d-flex col-lg-12 justify-content-center  align-items-center text-center">
             <div class=" text-light">
-                <h1 class="display-4 text-light px-2">Register Now ! </h1>
+                <h1 class="display-4 text-light px-2 font-weight-bolder">Register Now ! </h1>
                 <span class="d-inline font-weight-bold" style="font-size:4rem;color: #9cd9ee; font-family: 'Long Cang', cursive;">&</span>
-                <h1>Stay Connected </h1>
+                <h1 class="font-weight-bold">Stay Connected </h1>
                 <br>
                 <span class="text-light">
                     <i class="fa fa-home" aria-hidden="true"></i><a class="text-light" href="index.html">Home</a>
@@ -17,74 +17,76 @@
             </div>
         </div>
     </div>
-    <div class="signup-form col-md-8 m-0 pt-2">
-        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-md-12 pt-5 ", role = "form", @id = "formRegister" }))
+    <div class="signup-form col-lg-8 m-0 pt-2 p-0">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-lg-12 pt-5 m-0", role = "form", @id = "formRegister" }))
         {
-            <div class="col-md-6">
-                <div class="div-form col-md-12">
+            <div class="col-lg-6">
+                <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.UserName, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.UserName, new { @class = ".input col-md-12" })
+                    @Html.TextBoxFor(m => m.UserName, new { @class = ".input col-lg-12" })
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12  p-0">
                     @Html.LabelFor(m => m.Email, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.Email, new { @class = "col-md-12" })
+                    @Html.TextBoxFor(m => m.Email, new { @class = "col-lg-12" })
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.Password, new { @class = "required labelinput" })
-                    <div class="input-group col-md-12 p-0">
+                    <div class="input-group col-lg-12 p-0">
                         @Html.PasswordFor(m => m.Password, new { @class = "passinput" })
                         <span class="input-group-append p-0">
                             <span class="icon-pass input-group-text px-4"></span>
                         </span>
                     </div>
-
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.ConfirmPassword, new { @class = "required labelinput" })
-                    <div class="input-group col-md-12 p-0">
+                    <div class="input-group col-lg-12 p-0">
                         @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "inputCon" })
                         <span class="input-group-append p-0">
                             <span class="icon-con input-group-text px-4"></span>
                         </span>
                     </div>
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.PhoneNumber, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "col-md-12 " })
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "col-lg-12 " })
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.Address, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.Address, new { @class = "col-md-12" })
+                    @Html.TextBoxFor(m => m.Address, new { @class = "col-lg-12" })
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row d-flex col-md-12 m-0 p-0 justify-content-between">
-                    <div class="div-form col-md-6">
+            <div class="col-lg-6" style="height:max-content;">
+                <div class="row d-flex col-lg-12 m-0 p-0 justify-content-between">
+                    <div class="div-form col-lg-6 p-0">
                         <label class="required labelinput" for="country">Country</label>
-                        <select name="Country" id="Country" class="col-md-12">
+                        <select name="Country" id="Country" class="col-lg-12">
                         </select>
                     </div>
-                    <div class="div-form col-md-6">
+                    <div class="div-form col-lg-6 px-1">
                         <label class="required labelinput" for="">State</label>
-                        <select name="State" id="State" class="col-md-12">
+                        <select name="State" id="State" class="col-lg-12">
                         </select>
                     </div>
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12 p-0">
                     <label class="required labelinput" for="">City</label>
-                    <select name="City" id="City" class="col-md-12">
+                    <select name="City" id="City" class="col-lg-12">
                     </select>
                 </div>
-                <div class="div-form col-md-12">
+                <div class="div-form col-lg-12 p-0">
                     <label></label>
-                    <button class="btn font-weight-bold col-md- d-flex justify-content-center align-items-center w-100" style="background-color:#DF6C4F;height:43px;color:white;font-size:1.3rem;" type="submit"><span>Register</span></button>
+                    <button class="btn font-weight-bold col-lg- d-flex justify-content-center align-items-center w-100" style="background-color:#DF6C4F;height:43px;color:white;font-size:1.3rem;" type="submit"><span>Register</span></button>
                 </div>
                 <div id="div-or"><span id="sp1"></span> <span id="sp2">OR</span><span id="sp3"> </span></div>
-                <div class="div-form col-md-12 mb-2">
-                    @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-                </div>
             </div>
         }
+        <div class="col-lg-6 ml-auto external-login-section">
+            <div class="div-form col-lg-12 ">
+                @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </div>
+        </div>
+
     </div>
 </section>
 <script src="~/Scripts/jquery-3.4.1.js"></script>

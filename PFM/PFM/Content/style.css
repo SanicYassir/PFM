@@ -249,12 +249,12 @@ nav {
     background-size: cover;
        background-color :#DF6C4F;
 }
-.about-div .col-md-8
+.about-div .col-lg-8
 {
     background-color: #25728b;
     border-radius: 15px;
 }
-.about-div .col-md-8 h1
+.about-div .col-lg-8 h1
 {
     font-family:  'Long Cang', cursive ;
 }

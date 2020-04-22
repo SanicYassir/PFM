@@ -105,7 +105,7 @@
         "iso2": "AM",
         "phone_code": "374",
         "capital": "Yerevan",
-        "currency": "AMD"
+        "currency": "Alg"
     },
     {
         "id": 13,
@@ -222,7 +222,7 @@
         "iso2": "BM",
         "phone_code": "+1-441",
         "capital": "Hamilton",
-        "currency": "BMD"
+        "currency": "Blg"
     },
     {
         "id": 26,
@@ -717,7 +717,7 @@
         "iso2": "GM",
         "phone_code": "220",
         "capital": "Banjul",
-        "currency": "GMD"
+        "currency": "Glg"
     },
     {
         "id": 81,
@@ -857,7 +857,7 @@
     {
         "id": 96,
         "name": "Heard and McDonald Islands",
-        "iso3": "HMD",
+        "iso3": "Hlg",
         "iso2": "HM",
         "phone_code": " ",
         "capital": "",
@@ -969,7 +969,7 @@
         "iso2": "JM",
         "phone_code": "+1-876",
         "capital": "Kingston",
-        "currency": "JMD"
+        "currency": "Jlg"
     },
     {
         "id": 109,
@@ -1163,7 +1163,7 @@
     {
         "id": 130,
         "name": "Madagascar",
-        "iso3": "MDG",
+        "iso3": "lgG",
         "iso2": "MG",
         "phone_code": "261",
         "capital": "Antananarivo",
@@ -1190,7 +1190,7 @@
     {
         "id": 133,
         "name": "Maldives",
-        "iso3": "MDV",
+        "iso3": "lgV",
         "iso2": "MV",
         "phone_code": "960",
         "capital": "Male",
@@ -1289,11 +1289,11 @@
     {
         "id": 144,
         "name": "Moldova",
-        "iso3": "MDA",
-        "iso2": "MD",
+        "iso3": "lgA",
+        "iso2": "lg",
         "phone_code": "373",
         "capital": "Chisinau",
-        "currency": "MDL"
+        "currency": "lgL"
     },
     {
         "id": 145,

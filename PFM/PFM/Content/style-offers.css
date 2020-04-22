@@ -1,20 +1,4 @@
 
-
-
-
-
-.signup-img-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 .div-form {
     margin-bottom: 23px;
 }
@@ -62,63 +46,6 @@ input, select {
     -ms-justify-content: space-between;
 }
 
-    .label-flex label {
-    }
-
-.form-link {
-    font-size: 12px;
-    color: #222;
-    text-decoration: none;
-    position: relative;
-}
-
-    .form-link:after {
-        position: absolute;
-        content: "";
-        height: 2px;
-        background: #d7d7d7;
-        left: 0;
-        bottom: 12px;
-    }
-
-.submit {
-    height: 50px;
-    display: inline-block;
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 14px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-}
-
-#reset {
-    background: #fff;
-    color: #999;
-    border: 2px solid #ebebeb;
-}
-
-    #reset:hover {
-        border: 2px solid #329e5e;
-        background: #329e5e;
-        color: #fff;
-    }
-
-#submit {
-    background: #329e5e;
-    color: #fff;
-    margin-right: 25px;
-}
-
-    #submit:hover {
-        background-color: #267747;
-    }
 
 .div-form {
     position: relative;
@@ -188,7 +115,10 @@ input.error {
     height: 3px;
     margin:2px;
 }
-
+.passinput, .inputCon
+{
+    max-width:86%;
+}
 
 #div-or {
     width: 100%;
@@ -211,4 +141,28 @@ input.error {
     background-size: 20px;
     color: lightgray;
     cursor: pointer;
+}
+@media screen and (min-width: 1000px) {
+    .external-login-section {
+        margin-top:-220px;
+        
+    }
+    /*.sec-showcase-offers {
+        height: 50vh;
+    }*/
+}
+
+@media (max-width: 1000px) {
+    .external-login-section {
+        margin-top: 0px;
+    }
+    .div-form input
+    {
+        width:100%;
+    }
+    .sec-showcase-offers {
+        height: 680px;
+    }
+    .passinput, .inputCon {
+    }
 }

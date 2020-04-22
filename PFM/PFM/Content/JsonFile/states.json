@@ -3221,7 +3221,7 @@
     },
     {
         "id": 243,
-        "name": "Samdrup Jongkhar District",
+        "name": "Salgrup Jongkhar District",
         "country_id": 26,
         "country_code": "BT",
         "state_code": "45"
@@ -4071,7 +4071,7 @@
         "name": "Komondjari Province",
         "country_id": 35,
         "country_code": "BF",
-        "state_code": "KMD"
+        "state_code": "Klg"
     },
     {
         "id": 3157,
@@ -10203,7 +10203,7 @@
         "name": "Mandiana Prefecture",
         "country_id": 92,
         "country_code": "GN",
-        "state_code": "MD"
+        "state_code": "lg"
     },
     {
         "id": 2678,
@@ -13416,7 +13416,7 @@
         "name": "Madaba Governorate",
         "country_id": 111,
         "country_code": "JO",
-        "state_code": "MD"
+        "state_code": "lg"
     },
     {
         "id": 962,
@@ -17704,7 +17704,7 @@
     },
     {
         "id": 89,
-        "name": "Mdina",
+        "name": "lgina",
         "country_id": 135,
         "country_code": "MT",
         "state_code": "29"
@@ -18427,252 +18427,252 @@
         "id": 4368,
         "name": "Anenii Noi District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "AN"
     },
     {
         "id": 4379,
         "name": "Basarabeasca District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "BS"
     },
     {
         "id": 4393,
         "name": "Bălți Municipality",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "BA"
     },
     {
         "id": 4362,
         "name": "Bender Municipality",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "BD"
     },
     {
         "id": 4375,
         "name": "Briceni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "BR"
     },
     {
         "id": 4391,
         "name": "Cahul District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CA"
     },
     {
         "id": 4380,
         "name": "Cantemir District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CT"
     },
     {
         "id": 4366,
         "name": "Călărași District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CL"
     },
     {
         "id": 4365,
         "name": "Căușeni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CS"
     },
     {
         "id": 4373,
         "name": "Chișinău Municipality",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CU"
     },
     {
         "id": 4360,
         "name": "Cimișlia District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CM"
     },
     {
         "id": 4390,
         "name": "Criuleni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "CR"
     },
     {
         "id": 4384,
         "name": "Dondușeni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "DO"
     },
     {
         "id": 4392,
         "name": "Drochia District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "DR"
     },
     {
         "id": 4383,
         "name": "Dubăsari District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "DU"
     },
     {
         "id": 4387,
         "name": "Edineț District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "ED"
     },
     {
         "id": 4388,
         "name": "Șoldănești District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "SD"
     },
     {
         "id": 4378,
         "name": "Ștefan Vodă District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "SV"
     },
     {
         "id": 4381,
         "name": "Fălești District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "FA"
     },
     {
         "id": 4370,
         "name": "Florești District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "FL"
     },
     {
         "id": 4385,
         "name": "Gagauzia",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "GA"
     },
     {
         "id": 4367,
         "name": "Glodeni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "GL"
     },
     {
         "id": 4382,
         "name": "Hîncești District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "HI"
     },
     {
         "id": 4369,
         "name": "Ialoveni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "IA"
     },
     {
         "id": 4363,
         "name": "Nisporeni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "NI"
     },
     {
         "id": 4389,
         "name": "Ocnița District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "OC"
     },
     {
         "id": 4361,
         "name": "Orhei District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "OR"
     },
     {
         "id": 4376,
         "name": "Rîșcani District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "RI"
     },
     {
         "id": 4394,
         "name": "Rezina District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "RE"
     },
     {
         "id": 4364,
         "name": "Sîngerei District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "SI"
     },
     {
         "id": 4374,
         "name": "Soroca District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "SO"
     },
     {
         "id": 4377,
         "name": "Strășeni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "ST"
     },
     {
         "id": 4372,
         "name": "Taraclia District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "TA"
     },
     {
         "id": 4371,
         "name": "Telenești District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "TE"
     },
     {
         "id": 4395,
         "name": "Transnistria autonomous territorial unit",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "SN"
     },
     {
         "id": 4386,
         "name": "Ungheni District",
         "country_id": 144,
-        "country_code": "MD",
+        "country_code": "lg",
         "state_code": "UN"
     },
     {
@@ -20206,7 +20206,7 @@
         "name": "Madriz Department",
         "country_id": 159,
         "country_code": "NI",
-        "state_code": "MD"
+        "state_code": "lg"
     },
     {
         "id": 941,
@@ -21438,7 +21438,7 @@
         "name": "Madre de Dios",
         "country_id": 173,
         "country_code": "PE",
-        "state_code": "MDD"
+        "state_code": "lgD"
     },
     {
         "id": 3698,
@@ -21991,14 +21991,14 @@
         "name": "Occidental Mindoro",
         "country_id": 174,
         "country_code": "PH",
-        "state_code": "MDC"
+        "state_code": "lgC"
     },
     {
         "id": 1354,
         "name": "Oriental Mindoro",
         "country_id": 174,
         "country_code": "PH",
-        "state_code": "MDR"
+        "state_code": "lgR"
     },
     {
         "id": 1361,
@@ -26429,7 +26429,7 @@
         "name": "Community of Madrid",
         "country_id": 207,
         "country_code": "ES",
-        "state_code": "MD"
+        "state_code": "lg"
     },
     {
         "id": 1169,
@@ -31473,10 +31473,10 @@
     },
     {
         "id": 2349,
-        "name": "London Borough of Camden",
+        "name": "London Borough of Calgen",
         "country_id": 232,
         "country_code": "GB",
-        "state_code": "CMD"
+        "state_code": "Clg"
     },
     {
         "id": 2512,
@@ -31651,7 +31651,7 @@
         "name": "Medway",
         "country_id": 232,
         "country_code": "GB",
-        "state_code": "MDW"
+        "state_code": "lgW"
     },
     {
         "id": 2328,
@@ -31686,7 +31686,7 @@
         "name": "Middlesbrough",
         "country_id": 232,
         "country_code": "GB",
-        "state_code": "MDB"
+        "state_code": "lgB"
     },
     {
         "id": 2519,
@@ -31756,7 +31756,7 @@
         "name": "Newry, Mourne and Down",
         "country_id": 232,
         "country_code": "GB",
-        "state_code": "NMD"
+        "state_code": "Nlg"
     },
     {
         "id": 2317,
@@ -32526,7 +32526,7 @@
         "name": "Maryland",
         "country_id": 233,
         "country_code": "US",
-        "state_code": "MD"
+        "state_code": "lg"
     },
     {
         "id": 1433,

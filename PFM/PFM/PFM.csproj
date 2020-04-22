@@ -212,7 +212,6 @@
     <Content Include="Content\style_room_page.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="pic\best-deals.jpg" />
     <Content Include="pic\btn_google_light_normal_ios.svg" />
     <Content Include="pic\canvas.jpg" />
