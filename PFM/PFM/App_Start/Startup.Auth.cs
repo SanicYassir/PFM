@@ -60,7 +60,7 @@ namespace PFM
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "186368585933-p556irorhg1lnum7ieeohlgarkh2s7nv.apps.googleusercontent.com",
+                ClientId = "186368585933-p556irorhg1lnum7ieeohmdarkh2s7nv.apps.googleusercontent.com",
                 ClientSecret = "YXHVgqsEV9q9SRl1UeM8xX6H"
             });
         }

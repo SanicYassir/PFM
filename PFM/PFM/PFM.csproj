@@ -19,11 +19,11 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+    <IISExpressSSLPort>44333</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -181,6 +181,14 @@
     <Compile Include="Migrations\202004221118464_init.cs" />
     <Compile Include="Migrations\202004221118464_init.Designer.cs">
       <DependentUpon>202004221118464_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004221240293_init1.cs" />
+    <Compile Include="Migrations\202004221240293_init1.Designer.cs">
+      <DependentUpon>202004221240293_init1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004221514314_init2.cs" />
+    <Compile Include="Migrations\202004221514314_init2.Designer.cs">
+      <DependentUpon>202004221514314_init2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -438,6 +446,12 @@
     <EmbeddedResource Include="Migrations\202004221118464_init.resx">
       <DependentUpon>202004221118464_init.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004221240293_init1.resx">
+      <DependentUpon>202004221240293_init1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004221514314_init2.resx">
+      <DependentUpon>202004221514314_init2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -458,7 +472,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50249</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50249/</IISUrl>
+          <IISUrl>https://localhost:44333/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

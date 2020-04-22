@@ -86,7 +86,6 @@
                 @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
             </div>
         </div>
-
     </div>
 </section>
 <script src="~/Scripts/jquery-3.4.1.js"></script>
@@ -99,7 +98,7 @@
                 errorClass: 'help-block animation-slideDown text-danger',
                 errorElement: 'span',
                 errorPlacement: function (error, e) {
-                    e.parents('.form-group > div').append(error);
+                    e.parents('.div-form').append(error);
                 },
                 highlight: function (e) {
 
@@ -111,12 +110,6 @@
                     e.closest('.help-block').remove();
                 },
                 rules: {
-                    'firstName': {
-                        required: true
-                    },
-                    'lastName': {
-                        required: true
-                    },
                     'UserName': {
                         required: true
                     },
@@ -150,15 +143,8 @@
                     },
                 },
                 messages: {
-                    'firstName': {
-                        required: "first Name is required"
-                    },
-
-                    'lastName': {
-                        required: " last Name is required"
-                    },
                     'UserName': {
-                        required: "UserName is required"
+                        required: "<i class=\"fas fa-exclamation-circle\"></i>"
                     },
                     'Email': {
                         required: "Email is required",
