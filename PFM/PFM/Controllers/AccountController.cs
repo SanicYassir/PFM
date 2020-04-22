@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using PFM.Models;
+using System.Net.Mail;
 
 namespace PFM.Controllers
 {

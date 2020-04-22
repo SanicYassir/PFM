@@ -1,6 +1,6 @@
 
 .div-form {
-    margin-bottom: 23px;
+    margin-bottom: 10px;
 }
 
 
@@ -31,7 +31,7 @@ input, select {
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
     font-size: 20px;
-   max-width: 80%;
+    width: 100%;
 }
 
     input:focus {
@@ -85,7 +85,7 @@ input.error {
 
 .sec-showcase-offers {
     background-color: antiquewhite;
-    height: 680px;
+    height: 750px;
 }
 
 .showcase-offers {
@@ -161,8 +161,7 @@ input.error {
         width:100%;
     }
     .sec-showcase-offers {
-        height: 680px;
-        max-height:700px;
+        height: 700px;
     }
     .passinput, .inputCon {
     }

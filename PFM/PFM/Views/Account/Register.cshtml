@@ -18,8 +18,10 @@
         </div>
     </div>
     <div class="signup-form col-lg-8 m-0 pt-2 p-0">
+       
         @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-lg-12 pt-5 m-0", role = "form", @id = "formRegister" }))
         {
+            @Html.AntiForgeryToken()
             <div class="col-lg-6">
                 <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.UserName, new { @class = "required labelinput" })
@@ -55,6 +57,7 @@
                     @Html.LabelFor(m => m.Address, new { @class = "required labelinput" })
                     @Html.TextBoxFor(m => m.Address, new { @class = "col-lg-12" })
                 </div>
+
             </div>
             <div class="col-lg-6" style="height:max-content;">
                 <div class="row d-flex col-lg-12 m-0 p-0 justify-content-between">
@@ -81,11 +84,14 @@
                 <div id="div-or"><span id="sp1"></span> <span id="sp2">OR</span><span id="sp3"> </span></div>
             </div>
         }
-        <div class="col-lg-6 ml-auto external-login-section">
-            <div class="div-form col-lg-12 ">
-                @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-            </div>
+    <div class="col-lg-6 ml-auto external-login-section">
+        <div class="div-form col-lg-12 ">
+            @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
         </div>
+        <diV class="div-form col-lg-11 py-4">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </diV>
+    </div>
     </div>
 </section>
 <script src="~/Scripts/jquery-3.4.1.js"></script>
@@ -98,7 +104,7 @@
                 errorClass: 'help-block animation-slideDown text-danger',
                 errorElement: 'span',
                 errorPlacement: function (error, e) {
-                    e.parents('.div-form').append(error);
+                    e.parents('.div-form ').append(error);
                 },
                 highlight: function (e) {
 
@@ -126,8 +132,7 @@
                         equalTo: "#Password"
                     },
                     'PhoneNumber': {
-                        required: true,
-                        matches: "[0-9]+"
+                        required: true
                     },
                     'Address': {
                         required: true
@@ -144,11 +149,11 @@
                 },
                 messages: {
                     'UserName': {
-                        required: "<i class=\"fas fa-exclamation-circle\"></i>"
+                        required: "UserName is required"
                     },
                     'Email': {
                         required: "Email is required",
-                        email: true
+                        email: "Enter a Valid email(example@xyz.az)"
                     },
                     'Password': {
                         required: "Password is required",
@@ -159,8 +164,7 @@
                         equalTo: "Password and Confirmation Password not much"
                     },
                     'PhoneNumber': {
-                        required: "Phone Number is required",
-                        matches: "[0-9]+"
+                        required: "Phone Number is required"
                     },
                     'Address': {
                         required: "Address is required"
