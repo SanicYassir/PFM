@@ -58,12 +58,6 @@
 .inputgroup {
     display: flex !important;
 }
-
-
-input:focus {
-    border-color: transparent !important;
-}
-
 .div-form {
     margin-bottom: 10px;
 }
@@ -82,9 +76,6 @@ label.required {
         margin-left: 2px;
         color: #b90000;
     }
-input:focus {
-    border: 1px solid #08361a;
-}
 .label-flex {
     justify-content: space-between;
     -moz-justify-content: space-between;
@@ -109,6 +100,10 @@ input:focus {
     padding: 0 10px 0 38px;
     outline: none;
     border: none;
+}
+select
+{
+    padding-left:15rem;
 }
 
     @media screen and (min-width: 1000px) {

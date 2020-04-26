@@ -178,9 +178,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202004221859089_init.cs" />
-    <Compile Include="Migrations\202004221859089_init.Designer.cs">
-      <DependentUpon>202004221859089_init.cs</DependentUpon>
+    <Compile Include="Migrations\202004261903470_iniiiiit.cs" />
+    <Compile Include="Migrations\202004261903470_iniiiiit.Designer.cs">
+      <DependentUpon>202004261903470_iniiiiit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -207,6 +207,7 @@
     <Content Include="Content\mobile.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\StylePageInscription.css" />
+    <Content Include="Content\StylePageLogin.css" />
     <Content Include="Content\style_eat_offers.css" />
     <Content Include="Content\style_eat_page.css" />
     <Content Include="Content\style_room_page.css" />
@@ -435,8 +436,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004221859089_init.resx">
-      <DependentUpon>202004221859089_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004261903470_iniiiiit.resx">
+      <DependentUpon>202004261903470_iniiiiit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

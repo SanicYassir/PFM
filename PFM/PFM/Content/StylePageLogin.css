@@ -1,0 +1,67 @@
+﻿.icon-pass {
+    background-image: url(../pic/eye-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    color: lightgray;
+    cursor: pointer;
+    width: 10%;
+}
+.inputgroup {
+    display: flex !important;
+}
+
+.div-form {
+    margin-bottom: 10px;
+}
+
+.labelinput {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+label.required {
+    position: relative;
+}
+
+    label.required:after {
+        content: '*';
+        margin-left: 2px;
+        color: #b90000;
+    }
+.label-flex {
+    justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+}
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.input100 {
+    color: #403866;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    height: 40px;
+    padding: 0 10px 0 38px;
+    outline: none;
+    border: none;
+}
+.elementsOrange, .elementsOrange a {
+    color: #DF6C4F;
+}
+.elementfont {
+    font-family: 'Long Cang', cursive;
+    text-align:center !important;
+}
