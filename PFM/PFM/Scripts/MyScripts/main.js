@@ -4,21 +4,21 @@ $(document).ready(function () {
         $(".eat-div").hover(function () {
 
             $(".caption2").fadeIn(1000);
-            $('.caption').animate({ marginTop: '10%'}, 1000);
+            $('.caption').animate({ marginTop: '10%' }, 1000);
             // $(".caption").css('margin-top', '10%');
 
         }, function () {
 
             $(".caption2").fadeOut(1000);
-            $('.caption').animate({ marginTop: '60%'}, 1000);
+            $('.caption').animate({ marginTop: '60%' }, 1000);
         }
         );
         $(".offer-div").hover(function () {
             $(".caption3").fadeIn(1000);
-            $('.caption4').animate({ marginTop: '10%'}, 1000);
+            $('.caption4').animate({ marginTop: '10%' }, 1000);
         }, function () {
             $(".caption3").fadeOut(1000);
-            $('.caption4').animate({ marginTop: '60%'}, 1000);
+            $('.caption4').animate({ marginTop: '60%' }, 1000);
         });
     }
     else {
@@ -39,7 +39,7 @@ $(document).ready(function () {
             if (a == true) {
                 $("#fleche i").removeClass("fa-arrow-down text-danger");
                 $("#fleche i").addClass("fa-arrow-up text-primary");
-                $(".btn_display").css('background-color','#000000');
+                $(".btn_display").css('background-color', '#000000');
                 a = false;
             }
         $("#div_cacher").slideToggle("slow");;
@@ -65,17 +65,18 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: 0 }, '300');
     });
     $(".cont_btn_diner,.btn_diner").hover(function () {
-        $(".ligne").animate({width:"200px"},500);
-        }, function () {
-            $(".ligne").animate({width:"40px"},500);
-        }
+        $(".ligne").animate({ width: "200px" }, 500);
+    }, function () {
+        $(".ligne").animate({ width: "40px" }, 500);
+    }
     );
     $(".cont_btn_diner_1,.btn_diner_1").hover(function () {
-        $(".ligne_1").animate({width:"200px"},500);
-        }, function () {
-            $(".ligne_1").animate({width:"60px"},500);
-        }
+        $(".ligne_1").animate({ width: "200px" }, 500);
+    }, function () {
+        $(".ligne_1").animate({ width: "60px" }, 500);
+    }
     );
+
 });
 
 

@@ -2,7 +2,8 @@
 @{
     ViewBag.Title = "Register";
 }
-<link href="~/Content/style-offers.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/StylePageInscription.css" rel="stylesheet" />
 <section class="sec-main row d-flex col-lg-12 m-0 p-0">
     <div class="sec-showcase-offers col-lg-4 p-0 m-0">
         <div class="showcase-offers d-flex col-lg-12 justify-content-center  align-items-center text-center">
@@ -18,64 +19,81 @@
         </div>
     </div>
     <div class="signup-form col-lg-8 m-0 pt-2 p-0">
-       
-        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-lg-12 pt-5 m-0", role = "form", @id = "formRegister" }))
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "row form-horizontal col-lg-12 pt-5 m-0 form-horizontal login100-form validate-form flex-sb flex-w", role = "form", @id = "formRegister" }))
         {
             @Html.AntiForgeryToken()
             <div class="col-lg-6">
-                <div class="div-form col-lg-12 p-0">
+                <div class="div-form col-lg-12 p-0 ">
                     @Html.LabelFor(m => m.UserName, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.UserName, new { @class = ".input col-lg-12" })
+                    <div class="wrap-input100 validate-input">
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "input100" })
+                    </div>
                 </div>
-                <div class="div-form col-lg-12  p-0">
+                <div class="div-form col-lg-12 p-0 ">
                     @Html.LabelFor(m => m.Email, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.Email, new { @class = "col-lg-12" })
+                    <div class="wrap-input100 validate-input">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "input100" })
+                    </div>
                 </div>
-                <div class="div-form col-lg-12 p-0">
+                <div class="div-form col-lg-12 p-0 ">
                     @Html.LabelFor(m => m.Password, new { @class = "required labelinput" })
-                    <div class="input-group col-lg-12 p-0">
-                        @Html.PasswordFor(m => m.Password, new { @class = "passinput" })
-                        <span class="input-group-append p-0">
-                            <span class="icon-pass input-group-text px-4"></span>
-                        </span>
+                    <div class="wrap-input100 validate-input">
+                        <div class="inputgroup col-lg-12 w-100 p-0">
+                            @Html.PasswordFor(m => m.Password, new { @class = "passinput input100" })
+                            <span class="input-group-append p-0">
+                                <span class="icon-pass input-group-text px-4"></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.ConfirmPassword, new { @class = "required labelinput" })
-                    <div class="input-group col-lg-12 p-0">
-                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "inputCon" })
-                        <span class="input-group-append p-0">
-                            <span class="icon-con input-group-text px-4"></span>
-                        </span>
+                    <div class="wrap-input100 validate-input">
+                        <div class="inputgroup col-lg-12 p-0">
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "inputCon input100" })
+                            <span class="input-group-append p-0">
+                                <span class="icon-con input-group-text px-4"></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="div-form col-lg-12 p-0">
                     @Html.LabelFor(m => m.PhoneNumber, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "col-lg-12 " })
+                    <div class="wrap-input100 validate-input">
+                        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "col-lg-12 input100" })
+                    </div>
                 </div>
-                <div class="div-form col-lg-12 p-0">
+                <div class="div-form col-lg-12 p-0 ">
                     @Html.LabelFor(m => m.Address, new { @class = "required labelinput" })
-                    @Html.TextBoxFor(m => m.Address, new { @class = "col-lg-12" })
+                    <div class="wrap-input100 validate-input">
+                        @Html.TextBoxFor(m => m.Address, new { @class = "col-lg-12 input100" })
+                    </div>
                 </div>
-
             </div>
             <div class="col-lg-6" style="height:max-content;">
                 <div class="row d-flex col-lg-12 m-0 p-0 justify-content-between">
                     <div class="div-form col-lg-6 p-0">
                         <label class="required labelinput" for="country">Country</label>
-                        <select name="Country" id="Country" class="col-lg-12">
-                        </select>
+                        <div class="wrap-input100 validate-input">
+                            <select name="Country" id="Country" class="col-lg-12 input100 p-0">
+                            </select>
+                        </div>
                     </div>
                     <div class="div-form col-lg-6 px-1">
                         <label class="required labelinput" for="">State</label>
-                        <select name="State" id="State" class="col-lg-12">
-                        </select>
+                        <div class="wrap-input100 validate-input">
+                            <select name="State" id="State" class="col-lg-12 input100 p-0">
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="div-form col-lg-12 p-0">
                     <label class="required labelinput" for="">City</label>
-                    <select name="City" id="City" class="col-lg-12">
-                    </select>
+                    <div class="wrap-input100 validate-input">
+                        <select name="City" id="City" class="col-lg-12 input100">
+                        </select>
+                    </div>
                 </div>
                 <div class="div-form col-lg-12 p-0">
                     <label></label>
@@ -84,14 +102,14 @@
                 <div id="div-or"><span id="sp1"></span> <span id="sp2">OR</span><span id="sp3"> </span></div>
             </div>
         }
-    <div class="col-lg-6 ml-auto external-login-section">
-        <div class="div-form col-lg-12 ">
-            @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+        <div class="col-lg-6 ml-auto external-login-section">
+            <div class="div-form col-lg-12 ">
+                @Html.Partial("_ExternalLoginsListPartial", new PFM.Models.ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </div>
+            <diV class="div-form col-lg-11 py-4">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            </diV>
         </div>
-        <diV class="div-form col-lg-11 py-4">
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        </diV>
-    </div>
     </div>
 </section>
 <script src="~/Scripts/jquery-3.4.1.js"></script>

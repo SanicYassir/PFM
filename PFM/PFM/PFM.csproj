@@ -205,11 +205,12 @@
     <Content Include="Content\BtnSignUp.css" />
     <Content Include="Content\gallery.css" />
     <Content Include="Content\mobile.css" />
-    <Content Include="Content\style-offers.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\StylePageInscription.css" />
     <Content Include="Content\style_eat_offers.css" />
     <Content Include="Content\style_eat_page.css" />
     <Content Include="Content\style_room_page.css" />
+    <Content Include="Content\util.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="pic\best-deals.jpg" />
