@@ -1,5 +1,11 @@
 $(document).ready(function () {
+    if ($(window).scrollTop() < 12) {
+        $("nav").css(" opacity", "1");
+    }
+    else {
+        $("nav").css(" opacity", "0.8");
 
+    }
     if ($(window).width() >= 500) {
         $(".eat-div").hover(function () {
 
@@ -58,6 +64,13 @@ $(document).ready(function () {
             btn.addClass('show');
         } else {
             btn.removeClass('show');
+        }
+        if ($(window).scrollTop() < 12) {
+
+            $("nav").css(" opacity", "1");
+        }
+        else {
+            $("nav").css(" opacity", "0.8");
         }
     });
 

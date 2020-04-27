@@ -19,7 +19,7 @@ nav {
 
     margin-top: 0%;
     height: 50px;
-    opacity: .8;
+    /*opacity:1;*/
 }
 #my_nav
 {
@@ -27,7 +27,6 @@ nav {
 }
 #s_nav {
     color: #DF6C4F;
-
 }
 
 #s_b {
